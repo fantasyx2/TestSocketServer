@@ -77,10 +77,24 @@ public class FTClient implements IConnetorChangeListener, IFileTransferProgress 
 	}
 
 	public static void main(String[] args) {
+		
+		String host = "localhost";
+		int port = 8001;
+		String dir = "E:\\test\\send\\";
+		String filename = "tidy.txt";
+		if (args.length >= 4) {
+			System.out.println("will connect :" + args[0] + ", port:" + args[1] + ", dir:" + args[2] + ", filename:" + args[3]);
+			host = args[0];
+			port = Integer.parseInt(args[1]);
+			dir = args[2];
+			filename = args[3];
+		}
+		
+		
 		FTClient client = new FTClient();
-		client.Start("localhost", 8001);
+		client.Start(host, port);
 
-		client.sendFile("E:\\test\\send\\", "ti1dy.txt");
+		client.sendFile(dir, filename);
 
 		while (client.isRunning()) {
 			try {

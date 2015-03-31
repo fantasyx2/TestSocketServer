@@ -53,8 +53,17 @@ public class FTServer implements IConnetorChangeListener, IFileTransferProgress 
 	}
 
 	public static void main(String[] args) {
+		int port = 8001;
+		if(args.length>0){
+			try {
+				port = Integer.parseInt(args[0]);
+			} catch (NumberFormatException e) {
+				e.printStackTrace();
+			}
+		}
+		System.out.println("will start server on:"+port);
 		FTServer server = new FTServer();
-		server.Start(8001);
+		server.Start(port);
 	}
 
 	@Override
