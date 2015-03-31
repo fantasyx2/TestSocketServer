@@ -1,0 +1,1 @@
+java -jar FTServer.jar 8001 /Users/zhongduan-mini/Documents/FTServer/storage/

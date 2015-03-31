@@ -1,0 +1,1 @@
+java -jar FTClient.jar localhost 8001 /Users/zhongduan-mini/Documents/FTServer/send/ test.txt /Users/zhongduan-mini/Documents/FTServer/storage/

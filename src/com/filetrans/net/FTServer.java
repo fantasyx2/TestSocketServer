@@ -61,6 +61,11 @@ public class FTServer implements IConnetorChangeListener, IFileTransferProgress 
 				e.printStackTrace();
 			}
 		}
+		
+		if(args.length>1){
+			BaseDataPack.STORAGE_DIR = args[1];
+		}
+		
 		System.out.println("will start server on:"+port);
 		FTServer server = new FTServer();
 		server.Start(port);

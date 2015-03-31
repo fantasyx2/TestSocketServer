@@ -82,12 +82,15 @@ public class FTClient implements IConnetorChangeListener, IFileTransferProgress 
 		int port = 8001;
 		String dir = "E:\\test\\send\\";
 		String filename = "tidy.txt";
-		if (args.length >= 4) {
+		BaseDataPack.STORAGE_DIR = "E:\\test\\storage\\";
+		 
+		if (args.length >= 5) {
 			System.out.println("will connect :" + args[0] + ", port:" + args[1] + ", dir:" + args[2] + ", filename:" + args[3]);
 			host = args[0];
 			port = Integer.parseInt(args[1]);
 			dir = args[2];
 			filename = args[3];
+			BaseDataPack.STORAGE_DIR = args[4];
 		}
 		
 		

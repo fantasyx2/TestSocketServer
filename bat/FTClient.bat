@@ -1,1 +1,1 @@
-java -jar FTClient.jar localhost 8001 E:\test\send\ tidy.txt
+java -jar FTClient.jar localhost 8001 E:\test\send\ tidy.txt E:\test\storage\

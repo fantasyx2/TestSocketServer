@@ -255,6 +255,8 @@ public class BaseDataPack {
 	public void setSendFileDir(String sendFileDir) {
 		this.sendFileDir = sendFileDir;
 	}
+	
+	
 
 	@Override
 	public String toString() {

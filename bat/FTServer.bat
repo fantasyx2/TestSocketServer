@@ -1,1 +1,1 @@
-java -jar FTServer.jar 8001
+java -jar FTServer.jar 8001 E:\test\storage\
